@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
     timer.start();
     kb.run();
     timer.stop();
-    double secs = timer.elapsedMilliseconds() / 1000.;
-    std::cout << "time: " << secs << std::endl;
+    double secs = timer.elapsedMilliseconds();
+    std::cout << "time: " << secs / 1000. << std::endl;
     return 0;
 }
